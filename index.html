@@ -27,11 +27,11 @@
 	<table></table>
 
 	<script>
-
+	
+		var isTouchDevice = ('ontouchstart' in document.documentElement);
 		var difficulty = 0;
 
-		function getGridSize()
-		{
+		function getGridSize() {
 			var w = $(window).width();
 			var h = $(window).height();
 			var scaleStart = 50;
@@ -42,8 +42,7 @@
 
 		}
 
-		function generateSpace()
-		{
+		function generateSpace() {
 			var size = getGridSize();
 			var special = '☀️🌎🌍🌏🚀🛰🌠☄️🌕🌖🌗🌘🌑🌒🌓🌔🌕🌙🛰️🛸🪐';
 			var small = '✳✴🌕🌖🌗🌘🌑🌒🌓🌔🌕🌙●◆★⚹✸✹✶✷✱';
@@ -55,11 +54,9 @@
 
 			var html = "";
 
-			for (var y = 0; y < size[0]; y++)
-			{
+			for (var y = 0; y < size[0]; y++) {
 				html += "<tr>";
-				for (var x = 0; x < size[1]; x++)
-				{
+				for (var x = 0; x < size[1]; x++) {
 					var style = "";
 					style += "text-align: " + getRandomElement([ "left", "center", "right" ]) + ";";
 					style += "vertical-align: " + getRandomElement([ "top", "middle", "bottom" ]) + ";";
@@ -114,13 +111,13 @@
 				space = addCharacter(space, '🛰️');
 			if (getRandomInteger(0, 100) > 15)
 				space = addCharacter(space, '🚀');
-			if (getRandomInteger(0, 100) > 15)
+			if (!isTouchDevice && getRandomInteger(0, 100) > 15)
 				space = addCharacter(space, '🪐');
-			if (getRandomInteger(0, 100) > 50)
+			if (!isTouchDevice && getRandomInteger(0, 100) > 50)
 				space = addCharacter(space, '🌠');
 			if (getRandomInteger(0, 100) > 50)
 				space = addCharacter(space, '☄️');		
-			if (getRandomInteger(0, 100) > 75)
+			if (!isTouchDevice && getRandomInteger(0, 100) > 75)
 				space = addCharacter(space, '🛸');
 						
 			return space;
