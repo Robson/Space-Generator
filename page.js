@@ -62,7 +62,7 @@ function generateSpace() {
 function makeSpace(size) {
 	var density = getRandomInteger(60, 95) / 100;
 	var space = [];
-	var characters = '.*✦●◆★⚹✸✹✶✷✱';
+	var characters = '.*✦●◆★✸✹✶✷✱';
 	for (var y = 0; y < size[0]; y++) {
 		space[y] = [];
 		for (var x = 0; x < size[1]; x++) {					
