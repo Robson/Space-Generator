@@ -56,7 +56,7 @@ This is all of the JavaScript that generates the space scene.
 
 ### background1.png + background2.png
 
-In older versions one of these images was set as the background of the page. The images are almost entirely black with some simulated noise/static. They were removed because the overall aim is to create a webpage that just use emojis and not images.
+In older versions one of these images was set as the background of the page. The images are almost entirely black with some simulated noise/static. They were removed because the overall aim is to create a webpage that just uses emojis/unicode and not images.
 
 ## Technologies
 
