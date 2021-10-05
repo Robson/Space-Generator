@@ -33,7 +33,7 @@ The output for this project is designed for desktop and mobile.
 | Desktop  | Windows | Opera            | 79      | Working |
 | Desktop  | Windows | Chrome           | 94      | Working |
 | Desktop  | Windows | Edge             | 94      | Working |
-| Mobile   | Android | Chrome           | 94     | Working |
+| Mobile   | Android | Chrome           | 94      | Working |
 
 Last tested on 4th October 2021.
 
@@ -46,7 +46,17 @@ To run this on your computer:
 
 ## File Descriptions
 
-(to-do)
+### index.html + style.css
+
+These perform their normal roles: the webpage is responsible for the initial content of the page, whilst the stylesheet handles the formatting/layout.
+
+### page.js
+
+This is all of the JavaScript that generates the space scene.
+
+### background1.png + background2.png
+
+In older versions one of these images was set as the background of the page. The images are almost entirely black with some simulated noise/static. They were removed because the overall aim is to create a webpage that just use emojis and not images.
 
 ## Technologies
 
