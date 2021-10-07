@@ -13,7 +13,7 @@
 
 ## Demo
 
-(to-do)![Demo](https://raw.githubusercontent.com/Robson/Space-Generator/master/Demo.gif)
+![Demo](https://raw.githubusercontent.com/Robson/Space-Generator/master/Demo.gif)
 
 ## Explanation
 
