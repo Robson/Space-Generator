@@ -1,5 +1,4 @@
 var isTouchDevice = ('ontouchstart' in document.documentElement);
-var difficulty = 0;
 
 function getGridSize() {
 	var w = $(window).width();
@@ -123,5 +122,11 @@ function getRandomInteger(min, max) {
 function hideMessage() {
 	$('#help').remove();
 }		
+
+function isUsed(a) {
+	return a;
+}
+
+isUsed([hideMessage]);
 
 generateSpace();
